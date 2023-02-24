@@ -25,7 +25,8 @@
      <h2>Select one of the Crud methods to try it.</h2>
   <div class="wrapp_box_section">
     <!-- POST method btn -->
-    <button class="requestBtns_sect">
+    <button class="requestBtns_sect" id="creat_user"
+    onclick="creat_userPage()">
         <script>
            document.write(
            '<p><strong>'+index_ObjectContent[0].Post+'</strong>'+' user </p>'
@@ -34,7 +35,7 @@
     </button>
 
     <!-- GET method btn -->
-    <button class="requestBtns_sect">
+    <button class="requestBtns_sect" id="read_user">
         <script>
            document.write(
            '<p><strong>'+index_ObjectContent[1].Get+'</strong>'+' user </p>'
@@ -43,7 +44,7 @@
     </button>
 
     <!-- DELETE method btn -->
-    <button class="requestBtns_sect">
+    <button class="requestBtns_sect" id="delete_user">
         <script>
            document.write(
            '<p><strong>'+index_ObjectContent[2].Delete+'</strong>'+' user </p>'
@@ -52,7 +53,7 @@
     </button>
 
     <!-- UPDATE method btn -->
-    <button class="requestBtns_sect">
+    <button class="requestBtns_sect" id="update_user">
         <script>
            document.write(
            '<p><strong>'+index_ObjectContent[3].Update+'</strong>'+' user </p>'
@@ -64,3 +65,8 @@
 </div>
 
 </body>
+<script defer>
+   let creat_userPage = function(){
+     window.location.href= 'https://localhost/CRUD-in-PHP-MYSQL-DB/PDO/pages/creat_user.php';
+   }
+</script>
