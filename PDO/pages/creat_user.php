@@ -1,6 +1,7 @@
 <?PHP
 // require __DIR__ .'../methods/create.php';
 
+ 
 
 
 ?>
@@ -10,6 +11,9 @@
     {email:'user email'},
     {phone_num:'phone numbre'}, 
     {age:'age'}, 
+    {
+        location:'user location'
+    },
     {gender:'gender',
         sexe:{
             homme:'homme',
@@ -51,22 +55,28 @@
 </label></br>
 <input type="numbre" name="age" value=""/></br>
 
-<label><script>document.write(creatUser_Object[4].gender)</script></label></br>
+<!-- location field -->
+<label>
+    <script>document.write(creatUser_Object[4].location)</script>
+</label></br>
+<input type="text" name="location"/></br>
+
+<label><script>document.write(creatUser_Object[5].gender)</script></label></br>
 <!-- homme radio btn -->
 <label for="">
-<script>document.write(creatUser_Object[4].sexe.homme);</script>
+<script>document.write(creatUser_Object[5].sexe.homme);</script>
 </label>
 <input type="radio" name="sexe" value="homme"/>
 <!-- femme radio btn -->
 <label for="">
     <script>
-document.write(creatUser_Object[4].sexe.femme);
+document.write(creatUser_Object[5].sexe.femme);
 </script>
 </label>
 <input type="radio" name="sexe" value="femme"/></br>
 
 <button type="submit" name="creat">
-  <script>document.write(creatUser_Object[5].submition)</script>
+  <script>document.write(creatUser_Object[6].submition)</script>
 </button>
 </form>
 
