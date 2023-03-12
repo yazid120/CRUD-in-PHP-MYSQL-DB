@@ -67,6 +67,6 @@
 </body>
 <script defer>
    let creat_userPage = function(){
-     window.location.href= 'https://localhost/CRUD-in-PHP-MYSQL-DB/PDO/pages/creat_user.php';
+     window.location.href= 'https://localhost/CRUD-in-PHP-MYSQL-DB/PDO/pages/create_user.php';
    }
 </script>
