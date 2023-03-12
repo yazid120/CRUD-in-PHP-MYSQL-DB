@@ -14,7 +14,7 @@
 <body>
     <script type="text/javascript" defer>
        let index_ObjectContent = [ 
-        {Post:'Creat'},
+        {Post:'Create'},
         {Get:'Read'}, 
         {Delete:'Delete'},
         {Update:'Update'}
