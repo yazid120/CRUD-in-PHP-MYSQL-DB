@@ -9,7 +9,7 @@
     <meta charset="utf-08" http-equiv="content-type"/>
     <meta http-equiv="X-UA-compatible" content="IE-edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./index.css"/>
+    <link rel="stylesheet" href="../Style/index.css"/>
 </head>
 <body>
     <script type="text/javascript" defer>
