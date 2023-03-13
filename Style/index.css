@@ -6,7 +6,18 @@ body{
     height: 100%; 
     margin: 0rem; 
     padding: 0rem; 
+} 
+
+.classic_extensions_wrapp{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; 
 }
+
 .method-request_buttonsWrapp{
     box-sizing: border-box;
     display: flex;
