@@ -1,14 +1,40 @@
 <?php 
 require_once __DIR__.'/standard.php';
+require_once __DIR__. '/Router.php';
 $REQUEST_METHOD = METHOD_REQUEST;
 
-switch($REQUEST_METHOD){ 
-    case'/': 
-        include_once('./index.php'); 
-    case'/PDO':
-        include_once('./PDO/index.php'); 
-    case'/MYSQLI':
-        require_once('./MYSQLI/index.php'); 
+// switch($REQUEST_METHOD){ 
+//     case'/': 
+//         include_once('./index.php'); 
+//     case'/PDO':
+//         include_once('./PDO/index.php'); 
+//     case'/MYSQLI':
+//         require_once('./MYSQLI/index.php'); 
+// }
+$Routes = [];
+
+route('/',function(){
+  echo 'Home page';
+});
+route('/PDO',function(){
+    echo 'PDO requests page';
+});
+route('/MYSQLI',function(){
+    echo 'MYSQLI requests page';
+}); 
+
+function route(string $path, callable $callback){
+    global $routes;
+    $routes[$path] = $callback; 
+}
+run(); 
+function run(){
+    $uri = REQUEST_URI;
+    global $routes; 
+    foreach($routes as $path => $callback){
+      if($routes!== $uri) continue; 
+      $callback();
+    }
 }
 ?>
 <head>
