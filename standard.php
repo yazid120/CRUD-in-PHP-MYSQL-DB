@@ -2,4 +2,6 @@
 
 define('METHOD_REQUEST',$_SERVER['REQUEST_METHOD']);
 
+define('REQUEST_URI' ,$_SERVER['REQUEST_URI']);
+
 ?>
