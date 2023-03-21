@@ -2,9 +2,7 @@
 
 
 
-
 ?>
-
 <head>
     <meta charset="utf-08" http-equiv="content-type"/>
     <meta http-equiv="X-UA-compatible" content="IE-edge"/>
@@ -67,6 +65,6 @@
 </body>
 <script defer>
    let creat_userPage = function(){
-     window.location.href= 'https://localhost/CRUD-in-PHP-MYSQL-DB/PDO/pages/create_user.php';
+     window.location.href= 'PDO/pages/create_user';
    }
 </script>

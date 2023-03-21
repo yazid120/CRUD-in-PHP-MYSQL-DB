@@ -63,4 +63,19 @@ function run(){
     </div>
 </div>
 <script src="./scripts/index.js" defer></script>
+<?php 
+//file_exists('file.txt')
+$result = file_exists('file.txt') ? true : false;
+if(file_exists('file.txt')){
+    echo 'fichier existent'; 
+}else{
+   echo 'fichier non exitent';
+}
+$somme = 0;
+for($i=1; $i<=10; $i++){
+    $somme = $somme + pow($i,3);
+}
+file_put_contents('file.txt',$somme); 
+echo file_get_contents('file.txt');
+?>
 </body>
