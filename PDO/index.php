@@ -16,11 +16,11 @@
         {Get:'Read'}, 
         {Delete:'Delete'},
         {Update:'Update'}
-       ]
+       ]; 
     </script>
 
 <div class="method-request_buttonsWrapp">
-     <h2>Select one of the Crud methods to try it.</h2>
+     <h2>Select one of the Crud methods With PDO to try it.</h2>
   <div class="wrapp_box_section">
     <!-- POST method btn -->
     <button class="requestBtns_sect" id="creat_user"
@@ -34,11 +34,13 @@
 
     <!-- GET method btn -->
     <button class="requestBtns_sect" id="read_user">
+      <a href=''>
         <script>
            document.write(
            '<p><strong>'+index_ObjectContent[1].Get+'</strong>'+' user </p>'
            ); 
         </script>
+        </a>
     </button>
 
     <!-- DELETE method btn -->
